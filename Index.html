@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Redhead Trailer Rentals — Reliable Trailer Rentals</title>
+  <meta name="description" content="Redhead Trailer Rentals — trailers for moving, hauling, events & more. Book online or call (555) 123-4567." />
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --brand:#c0392b;    /* redhead brand color */
+      --dark:#162029;
+      --muted:#6b7a86;
+      --max-width:1100px;
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family:Inter,system-ui,Segoe UI,Arial;
+      margin:0;color:var(--dark);line-height:1.45;
+      -webkit-font-smoothing:antialiased;
+      background:linear-gradient(180deg,#fff 0%, #fbfdfe 100%);
+    }
+    .container{max-width:var(--max-width);margin:0 auto;padding:24px;}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0;}
+    .logo{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--dark)}
+    .logo .mark{width:46px;height:46px;border-radius:8px;background:var(--brand);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px}
+    nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:28px 0}
+    .hero h1{font-size:clamp(26px,4vw,40px);margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .cta{display:inline-block;background:var(--brand);color:#fff;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+    .card{background:#fff;padding:18px;border-radius:14px;box-shadow:0 6px 22px rgba(6,22,30,0.06);}
+    /* fleet */
+    .fleet-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin:22px 0}
+    .fleet-item img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+    .fleet-item h4{margin:10px 0 6px}
+    .price{font-weight:700;color:var(--brand)}
+    /* pricing table */
+    .pricing{display:flex;gap:18px;flex-wrap:wrap;margin:22px 0}
+    .plan{flex:1;min-width:220px;background:#fff;padding:18px;border-radius:12px;border:1px solid #eef4f7}
+    .plan h3{margin-top:0}
+    .small{font-size:14px;color:var(--muted)}
+    /* form */
+    form{display:grid;gap:12px}
+    input,select,textarea{
+      width:100%;padding:10px;border-radius:8px;border:1px solid #dbe8ee;font-size:15px;
+      background:white;
+    }
+    label{font-size:13px;color:var(--muted)}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .btn{background:var(--brand);color:white;padding:12px;border-radius:10px;border:0;font-weight:700;cursor:pointer}
+    footer{margin:28px 0 80px;color:var(--muted);font-size:14px;text-align:center}
+    /* responsive */
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr}
+      header{flex-direction:column;align-items:flex-start;gap:12px}
+      nav{display:flex;gap:12px;flex-wrap:wrap}
+      .row{grid-template-columns:1fr}
+    }
+
+    /* small util */
+    .muted{color:var(--muted)}
+    .center{text-align:center}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#fff;border:1px solid #f1f5f7;font-weight:600}
+    .success{background:#e7f9ee;border-color:#cdeed2;color:#0f6b3a}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="#" class="logo" aria-label="Redhead Trailer Rentals home">
+        <div class="mark">R</div>
+        <div>
+          <div style="font-weight:700">Redhead Trailer Rentals</div>
+          <div style="font-size:13px;color:var(--muted)">Fast. Reliable. Local.</div>
+        </div>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="#fleet">Fleet</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#book">Book</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Trailer rentals made simple — move, haul, or tow with confidence.</h1>
+          <p>Redhead Trailer Rentals offers a wide selection of utility, enclosed, car hauler, and equipment trailers. Flexible short- and long-term rentals, delivery & pickup options available.</p>
+
+          <div style="display:flex;gap:12px;align-items:center">
+            <a href="#book" class="cta">Book a trailer</a>
+            <div class="pill">Call: (555) 123-4567</div>
+          </div>
+
+          <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+            <div class="card" style="min-width:220px">
+              <div style="font-size:13px;color:var(--muted)">Best for</div>
+              <div style="font-weight:700;margin-top:6px">Local moves & DIY hauling</div>
+              <div style="margin-top:10px;color:var(--muted);font-size:14px">Delivery available — ask for a quote.</div>
+            </div>
+            <div class="card" style="min-width:220px">
+              <div style="font-size:13px;color:var(--muted)">Insurance</div>
+              <div style="font-weight:700;margin-top:6px">$10/day damage waiver (optional)</div>
+              <div style="margin-top:10px;color:var(--muted);font-size:14px">Commercial accounts available.</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card" aria-hidden="false">
+          <div style="font-size:13px;color:var(--muted)">Quick search</div>
+          <form id="quick-search" onsubmit="event.preventDefault(); document.getElementById('book').scrollIntoView({behavior:'smooth'})">
+            <label for="type">Trailer type</label>
+            <select id="type" name="type">
+              <option value="utility">Utility Trailer (5x8)</option>
+              <option value="enclosed">Enclosed Trailer (6x12)</option>
+              <option value="car">Car Hauler (7x16)</option>
+              <option value="equipment">Equipment Trailer (7x18)</option>
+            </select>
+
+            <label for="days">Number of days</label>
+            <input id="days" type="number" min="1" value="1" />
+
+            <label for="date">Start date</label>
+            <input id="date" type="date" />
+
+            <button class="btn" style="width:100%;margin-top:8px">Start booking</button>
+            <div style="font-size:13px;color:var(--muted);margin-top:8px">No card required. We'll contact to confirm.</div>
+          </form>
+        </aside>
+      </section>
+
+      <!-- Fleet -->
+      <section id="fleet">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:6px">
+          <h2>Our Fleet</h2>
+          <div class="small muted">Updated: Nov 16, 2025</div>
+        </div>
+
+        <p class="muted" style="margin:6px 0 16px">Selection shown below is an example. Add or remove trailer models and update pricing in the pricing section.</p>
+
+        <div class="fleet-grid">
+          <div class="fleet-item card">
+            <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Utility trailer">
+            <h4>Utility Trailer — 5' x 8'</h4>
+            <div class="small muted">Open bed for small moves</div>
+            <div style="margin-top:8px"><span class="price">$39/day</span> • <span class="small muted">$179/week</span></div>
+          </div>
+
+          <div class="fleet-item card">
+            <img src="https://images.unsplash.com/photo-1517167685289-8bfec0200f4f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Enclosed trailer">
+            <h4>Enclosed Trailer — 6' x 12'</h4>
+            <div class="small muted">Protect items from weather</div>
+            <div style="margin-top:8px"><span class="price">$59/day</span> • <span class="small muted">$299/week</span></div>
+          </div>
+
+          <div class="fleet-item card">
+            <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Car hauler">
+            <h4>Car Hauler — 7' x 16'</h4>
+            <div class="small muted">Transport vehicles safely</div>
+            <div style="margin-top:8px"><span class="price">$79/day</span> • <span class="small muted">$399/week</span></div>
+          </div>
+
+          <div class="fleet-item card">
+            <img src="https://images.unsplash.com/photo-1509475826633-fed577a2c71b?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Equipment trailer">
+            <h4>Equipment Trailer — 7' x 18'</h4>
+            <div class="small muted">Good for compact machines</div>
+            <div style="margin-top:8px"><span class="price">$89/day</span> • <span class="small muted">$449/week</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing" style="margin-top:8px">
+        <h2>Pricing & Options</h2>
+        <div class="pricing">
+          <div class="plan">
+            <h3>Daily Rental</h3>
+            <div class="small muted">From</div>
+            <div style="font-size:20px;font-weight:700;margin-top:6px">$39 / day</div>
+            <ul style="margin-top:10px;color:var(--muted);padding-left:18px">
+              <li>Unlimited miles within 40mi radius</li>
+              <li>1 full tank of gas included if delivered</li>
+              <li>Basic tie-downs & ramps included</li>
+            </ul>
+          </div>
+
+          <div class="plan">
+            <h3>Weekly Discount</h3>
+            <div class="small muted">Best value</div>
+            <div style="font-size:20px;font-weight:700;margin-top:6px">$179 / week</div>
+            <ul style="margin-top:10px;color:var(--muted);padding-left:18px">
+              <li>Reduced daily rate</li>
+              <li>Optional delivery & pickup</li>
+              <li>Commercial accounts & invoicing</li>
+            </ul>
+          </div>
+
+          <div class="plan">
+            <h3>Extras</h3>
+            <div class="small muted">Add-ons</div>
+            <div style="margin-top:6px">
+              <div>Damage waiver: <strong>$10/day</strong></div>
+              <div>Delivery: <strong>from $35</strong></div>
+              <div>Extra driver: <strong>$8/day</strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Booking form -->
+      <section id="book" style="margin-top:24px">
+        <h2>Book a Trailer</h2>
+        <div class="card" style="margin-top:12px">
+          <form id="booking-form">
+            <div class="row">
+              <div>
+                <label for="name">Full name</label>
+                <input id="name" required placeholder="Jane Doe" />
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input id="phone" required placeholder="(555) 123-4567" />
+              </div>
+            </div>
+
+            <label for="email">Email</label>
+            <input id="email" type="email" required placeholder="you@example.com" />
+
+            <div class="row">
+              <div>
+                <label for="select-trailer">Trailer</label>
+                <select id="select-trailer">
+                  <option value="utility">Utility 5x8 — $39/day</option>
+                  <option value="enclosed">Enclosed 6x12 — $59/day</option>
+                  <option value="car">Car Hauler 7x16 — $79/day</option>
+                  <option value="equipment">Equipment 7x18 — $89/day</option>
+                </select>
+              </div>
+              <div>
+                <label for="days2">Days</label>
+                <input id="days2" type="number" min="1" value="1" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div>
+                <label for="start">Start date</label>
+                <input id="start" type="date" />
+              </div>
+              <div>
+                <label for="end">End date</label>
+                <input id="end" type="date" />
+              </div>
+            </div>
+
+            <label for="message">Pickup / dropoff / notes</label>
+            <textarea id="message" rows="3" placeholder="Delivery address, special instructions..." ></textarea>
+
+            <div style="display:flex;gap:12px;align-items:center;margin-top:6px">
+              <button type="submit" class="btn">Request booking</button>
+              <button type="button" class="btn" id="save-local" style="background:#2b3b44">Save draft</button>
+              <div id="form-msg" style="font-size:14px;color:var(--muted)"></div>
+            </div>
+
+            <div style="margin-top:10px;font-size:13px;color:var(--muted)">We will contact you within 1 business day to confirm availability. Payment at pickup or via invoice.</div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" style="margin-top:18px">
+        <div style="display:flex;gap:18px;flex-wrap:wrap">
+          <div style="flex:1;min-width:280px">
+            <h3>Contact</h3>
+            <div class="small muted">Phone</div>
+            <div style="font-weight:700;margin-bottom:8px">(555) 123-4567</div>
+
+            <div class="small muted">Email</div>
+            <div style="font-weight:700;margin-bottom:8px">hello@redheadtrailers.example</div>
+
+            <div class="small muted">Address</div>
+            <div style="font-weight:700">1234 Depot Rd, Brooksville, TX</div>
+          </div>
+
+          <div class="card" style="flex:1;min-width:300px">
+            <h4>Open hours</h4>
+            <div class="small muted">Mon–Fri: 7am–6pm</div>
+            <div class="small muted">Sat: 8am–2pm</div>
+            <div class="small muted">Sun: Closed</div>
+            <div style="margin-top:12px"><strong>Emergency after hours:</strong> (555) 987-0000</div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="margin-bottom:8px">© <span id="year"></span> Redhead Trailer Rentals — All rights reserved</div>
+      <div class="small muted">Built with care • Customize at <code>index.html</code></div>
+    </footer>
+  </div>
+
+  <script>
+    // footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // quick-search defaults date to today
+    const today = new Date().toISOString().slice(0,10);
+    if(!document.getElementById('date').value) document.getElementById('date').value = today;
+
+    // Booking form logic: saves to localStorage, basic validation, and "send" simulation.
+    const form = document.getElementById('booking-form');
+    const saveBtn = document.getElementById('save-local');
+    const msg = document.getElementById('form-msg');
+
+    // load draft if present
+    const DRAFT_KEY = 'redhead_booking_draft';
+    function loadDraft(){
+      const raw = localStorage.getItem(DRAFT_KEY);
+      if(!raw) return;
+      try{
+        const data = JSON.parse(raw);
+        ['name','phone','email','message','days2','start','end','select-trailer'].forEach(k=>{
+          if(data[k] !== undefined && document.getElementById(k)) document.getElementById(k).value = data[k];
+        });
+        msg.textContent = 'Loaded saved draft.';
+        setTimeout(()=>msg.textContent='',2000);
+      }catch(e){}
+    }
+    loadDraft();
+
+    saveBtn.addEventListener('click',()=>{
+      const data = {
+        name: document.getElementById('name').value,
+        phone: document.getElementById('phone').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value,
+        'days2': document.getElementById('days2').value,
+        'start': document.getElementById('start').value,
+        'end': document.getElementById('end').value,
+        'select-trailer': document.getElementById('select-trailer').value,
+        savedAt: new Date().toISOString()
+      };
+      localStorage.setItem(DRAFT_KEY, JSON.stringify(data));
+      msg.textContent = 'Draft saved locally.';
+      msg.classList.add('muted');
+      setTimeout(()=>msg.textContent='',2000);
+    });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      msg.textContent = '';
+      // basic validation
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      if(!name || !email || !phone){
+        msg.textContent = 'Please fill name, phone and email.';
+        msg.style.color = 'crimson';
+        return;
+      }
+      // prepare payload
+      const payload = {
+        name, email, phone,
+        trailer: document.getElementById('select-trailer').value,
+        days: document.getElementById('days2').value,
+        start: document.getElementById('start').value,
+        end: document.getElementById('end').value,
+        notes: document.getElementById('message').value,
+        createdAt: new Date().toISOString()
+      };
+
+      // Simulation: store bookings in localStorage and show confirmation.
+      // Replace this block with a fetch() to your server or Formspree endpoint to actually send email.
+      try{
+        const bookings = JSON.parse(localStorage.getItem('redhead_bookings')||'[]');
+        bookings.push(payload);
+        localStorage.setItem('redhead_bookings', JSON.stringify(bookings));
+        localStorage.removeItem(DRAFT_KEY); // clear draft
+        msg.style.color = '#0b6b37';
+        msg.textContent = 'Booking requested — we will contact you to confirm. (Saved locally)';
+        form.reset();
+      }catch(err){
+        msg.style.color = 'crimson';
+        msg.textContent = 'Error saving booking locally.';
+      }
+    });
+
+    // Optional: wire up quick-search to open book section with prefilled values
+    document.getElementById('quick-search').addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const t = document.getElementById('type').value;
+      const days = document.getElementById('days').value || 1;
+      const start = document.getElementById('date').value || '';
+      // prefill booking form
+      document.getElementById('select-trailer').value = t;
+      document.getElementById('days2').value = days;
+      document.getElementById('start').value = start;
+      document.getElementById('book').scrollIntoView({behavior:'smooth'});
+      document.getElementById('name').focus();
+    });
+  </script>
+</body>
+</html>
